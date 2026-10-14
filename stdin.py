@@ -6,7 +6,8 @@
 
 
 def comptage():
-    return 0 
+    carac = input("entrez vos caractères")
+    return len(carac)
     
 if __name__ == "__main__":
     print(comptage())
