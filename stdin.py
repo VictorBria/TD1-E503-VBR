@@ -4,10 +4,12 @@
 - Ce programme ne devra afficher sur la sortie standard *que* le nombre de caractères saisi. 
 - Une fois le programme ci-dessous mis au point, poussez votre travail sur votre dépôt git et appelez l'enseignant avant de passer à l'exercice suivant."""
 
-
+import sys
 def comptage():
-    carac = input("entrez vos caractères")
+    carac = sys.stdin.read ()
     return len(carac)
     
 if __name__ == "__main__":
     print(comptage())
+
+    
